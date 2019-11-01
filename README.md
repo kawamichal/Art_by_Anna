@@ -2,13 +2,13 @@
 An e-store application that features shoping sessions, payments and order management.
 WORK IN PROGRESS.
 
-# Stack
+## Stack
 - Python
 - Django
 - Django Rest Framework
 - Celery
 
-# Credits
+## Credits
 All of the art presented in the app belongs to my wife, Anna Ilnicka - Kawa. Do not copy/use without credit.
 To learn more about her art, please visit:
 - www.facebook.com/art.by.anna.ilnicka.kawa/

@@ -3,20 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1a5a0013-ad36-4e0c-a037-dd867ba2b59a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/e_store/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/e_store/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e_store/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/e_store/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/2019/10/31/9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/2019/10/31/Plant_01_00.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/2019/10/31/van_gogh_01_03.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/templates/shop/categories.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/templates/shop/categories.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/templates/shop/product_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/templates/shop/product_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/templates/shop/products.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/templates/shop/products.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/apps.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectId" id="1T7IhWNCpUdO4PskOPLNexCkixD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -70,5 +59,16 @@
       <updated>1572545955916</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

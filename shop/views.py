@@ -1,6 +1,7 @@
 from django.shortcuts import get_object_or_404
 from django.views.generic import ListView, DetailView
 
+from cart.forms import CartAddProductForm
 from shop.models import Category, Product
 
 
@@ -38,3 +39,8 @@ class ProductDetail(DetailView):
     queryset = Product.objects.filter(available=True)
     model = Product
     template_name = 'shop/product_detail.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)  # Get an existing context
+        context['cart_product_form'] = CartAddProductForm()  # Add in a queryset of all the categories
+        return context

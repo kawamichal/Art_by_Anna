@@ -22,9 +22,13 @@
                 <img class="card-img-top img-fluid" src="{{ product.image.url }}" height="500">
                 <div class="card-body">
                     <h3 class="card-title">{{ product.name }}</h3>
-                    <h4>{{ product.price }} PLN</h4>
                     <p class="card-text">{{ product.description }}</p>
-
+                    <h4>{{ product.price }} PLN</h4>
+                    <form action="{% url 'cart:cart_add' product.id %}" method="post">
+                        {{ cart_product_form }}
+                        {% csrf_token %}
+                        <input type="submit" value="Add to cart">
+                    </form>
                 </div>
             </div>
             <!-- /.card -->

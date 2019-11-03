@@ -1,5 +1,16 @@
-{% for category in category_list %}
+{% extends 'base.html' %}
 
-{{ category.name }}
 
-{% endfor %}
+{% block content %}
+<h1> Choose a category </h1>
+<ul>
+     {% for category in category_list %}
+
+    <li>
+        <a href="{% url 'shop:products_by_category' category.slug %}">{{ category.name }}</a>
+    </li>
+
+    {% endfor %}
+</ul>
+
+{% endblock %}

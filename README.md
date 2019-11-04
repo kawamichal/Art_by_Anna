@@ -5,8 +5,15 @@ WORK IN PROGRESS.
 ## Stack
 - Python
 - Django
-- Django Rest Framework
-- Celery
+
+## I learned
+- e-store basic functionalities
+- static and media file serving
+- context edition
+- filtering querysets against urls
+- django session types and settings (database storing session used for the project)
+- shopping cart creation
+- context processors
 
 ## Credits
 All of the art presented in the app belongs to my wife, Anna Ilnicka - Kawa. Do not copy/use without credit.

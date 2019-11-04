@@ -5,6 +5,7 @@ WORK IN PROGRESS.
 ## Stack
 - Python
 - Django
+- Celery, RabbitMQ
 
 ## I learned
 - e-store basic functionalities
@@ -12,8 +13,9 @@ WORK IN PROGRESS.
 - context edition
 - filtering querysets against urls
 - django session types and settings (database storing session used for the project)
-- shopping cart creation
+- shopping cart creation and order management
 - context processors
+- using Cholocatey, Celery and RabbitMQ
 
 ## Credits
 All of the art presented in the app belongs to my wife, Anna Ilnicka - Kawa. Do not copy/use without credit.

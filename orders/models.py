@@ -1,6 +1,5 @@
 from django.db import models
 
-
 # a model that will let the owner generate a PDF invoice
 from shop.models import Product
 
@@ -19,13 +18,14 @@ class Order(models.Model):
     paid = models.BooleanField(default=False)
 
     class Meta:
-        ordering = ('-created',) # - for reverse order
+        ordering = ('-created',)  # - for reverse order
 
     def __str__(self):
-        return 'Order {}'.format(self.id) # a unique representation of each invoice
+        return 'Order {}'.format(self.id)  # a unique representation of each invoice
 
-    def get_total_cost(self): # total cost of all items in cart
-        return sum(item.get_cost() for item in self.items.all()) # items defined below as OrderItem
+    def get_total_cost(self):  # total cost of all items in cart
+        return sum(item.get_cost() for item in self.items.all())  # items defined below as OrderItem
+
 
 class OrderItem(models.Model):
     order = models.ForeignKey(Order, related_name='items', on_delete=models.CASCADE)

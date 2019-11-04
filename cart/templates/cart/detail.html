@@ -46,7 +46,7 @@ Your shopping cart
 </table>
 <p class="text-right">
     <a href="{% url 'shop:all_products' %}" class="button light">Continue shopping</a>
-    <a href="#" class="button">
+    <a href="{% url 'orders:order_create' %}" class="button">
         Checkout
     </a>
 </p>

@@ -16,3 +16,4 @@ class ProductAdmin(admin.ModelAdmin):
     list_editable = ['price', 'available']  # editable columns from the level of list display
     prepopulated_fields = {'slug': ('name',)}
     ordering = ['category']
+

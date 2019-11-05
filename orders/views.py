@@ -2,7 +2,7 @@ from django.shortcuts import render
 from cart.cart import Cart
 from orders.forms import OrderCreateForm
 from orders.models import OrderItem
-
+from .tasks import order_created
 
 def order_create(request):
     cart = Cart(request) # fetch the existing cart
@@ -16,6 +16,7 @@ def order_create(request):
                                          price=item['price'],
                                          quantity=item['quantity'])
             cart.clear() # clearing the cart after posting an order
+            order_created.delay(order.id) # starting an asynchronous task
             return render(request,'orders/created.html', {'order': order})
     else: # if request.method == 'GET':
         form = OrderCreateForm()

@@ -39,13 +39,13 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': ['templates'],
         'APP_DIRS': True,
-        'OPTIONS': { # https://docs.djangoproject.com/en/2.2/ref/templates/api/#built-in-template-context-processors
+        'OPTIONS': {  # https://docs.djangoproject.com/en/2.2/ref/templates/api/#built-in-template-context-processors
             'context_processors': [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'cart.context_processors.cart' # custom context processor, returns cart to all templates
+                'cart.context_processors.cart'  # custom context processor, returns cart to all templates
             ],
         },
     },
@@ -103,3 +103,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Session settings
 CART_SESSION_ID = 'cart'
+
+# celery setting for displaying e-mails in console
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'

@@ -19,7 +19,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'shop.apps.ShopConfig',
     'cart.apps.CartConfig',
-    'orders.apps.OrdersConfig'
+    'orders.apps.OrdersConfig',
+    'payment.apps.PaymentConfig'
 ]
 
 MIDDLEWARE = [
@@ -106,3 +107,16 @@ CART_SESSION_ID = 'cart'
 
 # celery setting for displaying e-mails in console
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# braintree settings
+BRAINTREE_MERCHANT_ID = os.environ.get('MERCHANT_ID', '')
+BRAINTREE_PUBLIC_KEY = os.environ.get('PUBLIC_KEY', '')
+BRAINTREE_PRIVATE_KEY = os.environ.get('PRIVATE_KEY', '')
+
+from braintree import Configuration, Environment
+Configuration.configure(
+    Environment.Sandbox,
+    BRAINTREE_MERCHANT_ID,
+    BRAINTREE_PUBLIC_KEY,
+    BRAINTREE_PRIVATE_KEY
+)

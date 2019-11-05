@@ -105,15 +105,13 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # Session settings
 CART_SESSION_ID = 'cart'
 
-# celery setting for displaying e-mails in console
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-
 # braintree settings
-BRAINTREE_MERCHANT_ID = os.environ.get('MERCHANT_ID', '')
-BRAINTREE_PUBLIC_KEY = os.environ.get('PUBLIC_KEY', '')
-BRAINTREE_PRIVATE_KEY = os.environ.get('PRIVATE_KEY', '')
+BRAINTREE_MERCHANT_ID = 'pfjgzfz4zmg6qwjq'  # values added to the environment
+BRAINTREE_PUBLIC_KEY = '9cwvhr9p7z7cxjhg'
+BRAINTREE_PRIVATE_KEY = 'fbd195ebcf96a91e8f799642d26b179d'
 
 from braintree import Configuration, Environment
+
 Configuration.configure(
     Environment.Sandbox,
     BRAINTREE_MERCHANT_ID,

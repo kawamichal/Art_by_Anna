@@ -2,44 +2,24 @@
 {% load static %}
 {% block content %}
 
-<!-- Page Content -->
-<div class="container">
+<h1 class="my-4">Categories:</h1>
+<br/>
 
-    <div class="row">
+<a href="{% url 'shop:all_products' %}">All</a>
+{% for category in category_list %}
+<a href="{% url 'shop:products_by_category' category.slug %}">{{ category.name }}</a>
+{% endfor %}
+<br/>
 
-        <div class="col-lg-3">
-            <h1 class="my-4">Categories:</h1>
-            <div class="list-group">
-                <a href="{% url 'shop:all_products' %}" class="list-group-item">All</a>
-                {% for category in category_list %}
-                <a href="{% url 'shop:products_by_category' category.slug %}" class="list-group-item">{{ category.name }}</a>
-                {% endfor %}
-            </div>
-        </div>
-        <!-- /.col-lg-3 -->
+{% for product in product_list %}
+<img src="{{ product.image.url }}">
+<br/>
 
-        <div class="col-lg-9">
-            {% for product in product_list %}
-            <div class="card mt-4">
-                <img class="card-img-top img-fluid" src="{{ product.image.url }}" width="350" height="600">
-                <div class="card-body">
-                    <h3 class="card-title">
-                        <a href="{% url 'shop:product_detail' product.slug %}" >{{ product.name }}</a>
-                    </h3>
-                    <h4>{{ product.price }} PLN</h4>
-                    <p class="card-text">{{ product.description }}</p>
+<a href="{% url 'shop:product_detail' product.slug %}">{{ product.name }}</a>
+<h4>{{ product.price }} PLN</h4>
+<p>{{ product.description }}</p>
 
-                </div>
-            </div>
-            <!-- /.card -->
-            {% endfor %}
-        </div>
-        <!-- /.col-lg-9 -->
-
-    </div>
-
-</div>
-<!-- /.container -->
+{% endfor %}
 
 {% endblock %}
 

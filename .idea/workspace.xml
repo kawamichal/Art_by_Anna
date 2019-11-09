@@ -3,17 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="1a5a0013-ad36-4e0c-a037-dd867ba2b59a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e_store/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/e_store/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e_store/celery.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/e_store/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/e_store/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e_store/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/e_store/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orders/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/orders/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orders/tasks.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/orders/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/orders/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/payment/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/9_q05x9pW.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/clooney_01_00.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/templates/payment/canceled.html" beforeDir="false" afterPath="$PROJECT_DIR$/payment/templates/payment/canceled.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/templates/payment/done.html" beforeDir="false" afterPath="$PROJECT_DIR$/payment/templates/payment/done.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/templates/payment/process.html" beforeDir="false" afterPath="$PROJECT_DIR$/payment/templates/payment/process.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/templates/shop/categories.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/templates/shop/categories.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/templates/shop/product_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/templates/shop/product_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/templates/shop/products.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/templates/shop/products.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/templates/shop/products_all.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/templates/shop/products_all.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

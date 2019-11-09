@@ -2,42 +2,18 @@
 {% load static %}
 
 {% block content %}
-<!-- Page Content -->
-<div class="container">
+<a href="{% url 'shop:all_products' %}">Go back</a>
+<br/>
+<br/>
 
-    <div class="row">
+<img src="{{ product.image.url }}">
+<h3>{{ product.name }}</h3>
+<p>{{ product.description }}</p>
+<h4>{{ product.price }} PLN</h4>
+<form action="{% url 'cart:cart_add' product.id %}" method="post">
+    {{ cart_product_form }}
+    {% csrf_token %}
+    <input type="submit" value="Add to cart">
+</form>
 
-        <div class="col-lg-3">
-            <h1 class="my-4">{{ product.category }}</h1>
-            <div class="list-group">
-                <a href="#" class="list-group-item">Add to Cart</a>
-                <a href="#" class="list-group-item">Order</a>
-                <a href="{% url 'shop:all_products' %}" class="list-group-item">Go back</a>
-            </div>
-        </div>
-        <!-- /.col-lg-3 -->
-
-        <div class="col-lg-9">
-            <div class="card mt-4">
-                <img class="card-img-top img-fluid" src="{{ product.image.url }}" height="500">
-                <div class="card-body">
-                    <h3 class="card-title">{{ product.name }}</h3>
-                    <p class="card-text">{{ product.description }}</p>
-                    <h4>{{ product.price }} PLN</h4>
-                    <form action="{% url 'cart:cart_add' product.id %}" method="post">
-                        {{ cart_product_form }}
-                        {% csrf_token %}
-                        <input type="submit" value="Add to cart">
-                    </form>
-                </div>
-            </div>
-            <!-- /.card -->
-        </div>
-        <!-- /.col-lg-9 -->
-
-    </div>
-
-</div>
-<!-- /.container -->
-
-    {% endblock %}
+{% endblock %}

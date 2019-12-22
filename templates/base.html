@@ -1,18 +1,38 @@
+<!DOCTYPE html>
 {% load static %}
 
-{% with total_items=cart|length %}
-{% if cart|length > 0 %}
-Cart:
-<a href="{% url 'cart:cart_detail' %}">
-    {{ total_items }} product{{ total_items|pluralize:"s" }},
-    {{ cart.get_total_price }} PLN
-</a>
-{% else %}
-Cart is empty.
-{% endif %}
-{% endwith %}
-<br/>
+<html lang="en">
+<head>
+    <title>Art by Anna</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 
+<div class="cart">
+    {% with total_items=cart|length %}
+    {% if cart|length > 0 %}
+    Cart:
+    <a href="{% url 'cart:cart_detail' %}">
+        {{ total_items }} product{{ total_items|pluralize:"s" }},
+        {{ cart.get_total_price }} PLN
+    </a>
+    {% else %}
+    Cart is empty.
+    {% endif %}
+    {% endwith %}
+</div>
+
+<header>
+    <h1>Art by Anna</h1>
+</header>
+
+<navbar>
+
+</navbar>
+
+<body>
 {% block content %}
 {% endblock %}
-
+</body>

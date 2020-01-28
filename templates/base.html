@@ -21,13 +21,13 @@
 		{{ cart.get_total_price }} PLN
 	</a>
 	{% else %}
-	Cart is empty.
+	<a>Cart is empty.</a>
 	{% endif %}
 	{% endwith %}
 </div>
 
 <header>
-    <h1> Art by Anna </h1>
+    <a class="page-title" href="{% url 'shop:home' %}">Art by Anna</a>
 </header>
 
 <navbar>

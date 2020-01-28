@@ -9,6 +9,8 @@ class CategoryList(ListView):
     queryset = Category.objects.all()
     model = Category
     template_name = 'shop/categories.html'
+    ordering = ['row_id',]
+
 
 class ProductList(ListView):
     queryset = Product.objects.filter(available=True)
@@ -19,6 +21,7 @@ class ProductList(ListView):
         context = super().get_context_data(**kwargs)  # Get an existing context
         context['category_list'] = Category.objects.all()  # Add in a queryset of all the categories
         return context
+
 
 class ProductByCategoryView(ListView):
     queryset = Product.objects.filter(available=True)

@@ -10,9 +10,13 @@
   padding: 10px;
 }
 
+hr {
+  max-width: 1510px;
+}
+
 .grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
+  display: inline-grid;
+  grid-template-columns: repeat(3, minmax(auto, 500px));
   grid-template-rows: auto;
   grid-gap: 5px;
   padding: 10px;
@@ -23,7 +27,7 @@
   color: black;
 }
 
-.text-card {
+.grid-container p {
   display: inline-block;
   max-width: 500px;
 }
@@ -40,3 +44,4 @@ img {
     grid-template-columns: 100%;
   }
 }
+

@@ -1,24 +1,24 @@
 {% extends 'base.html' %}
 {% load static %}
 
-<head>
-    {% block styles %}
-    <link rel="stylesheet" href="{% static 'css/categories.css' %}">
-    {% endblock %}
-</head>
+
+{% block extrahead %}
+<link rel="stylesheet" href="{% static 'css/categories.css' %}">
+{% endblock %}
+
 
 <body>
 {% block content %}
 <div class="content">
-    <h1> Choose a category </h1>
-    <br/>
-    <ul>
-        {% for category in category_list %}
-        <li>
-            <a href="{% url 'shop:products_by_category' category.slug %}">{{ category.name }}</a>
-        </li>
-        {% endfor %}
-    </ul>
+	<h1> Choose a category: </h1>
+	<br/>
+	<div class="row">
+		{% for category in category_list %}
+		<div class="column">
+			<a href="{% url 'shop:products_by_category' category.slug %}">{{ category.name }}</a>
+		</div>
+		{% endfor %}
+	</div>
 </div>
 {% endblock %}
 </body>

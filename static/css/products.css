@@ -2,13 +2,13 @@
 .column {
   float: left;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
 }
-/* Left and right column */
+/* Left column */
 .column.left {
   width: 25%;
 }
-/* Middle column */
+
+/* Right column */
 .column.right {
   width: 75%;
 }
@@ -19,15 +19,6 @@
   display: table;
   clear: both;
 }
-
-
-
-/* Style the side navigation */
-.sidenav {
-  height: 100%;
-  width: 200px;
-}
-
 
 /* Side navigation links */
 .column.left a {
@@ -40,12 +31,6 @@
 .column.left a:hover {
   background-color: #ddd;
   color: black;
-}
-
-/* Style the content */
-.content {
-  margin-left: 200px;
-  padding-left: 20px;
 }
 
 @media (max-width: 600px) {

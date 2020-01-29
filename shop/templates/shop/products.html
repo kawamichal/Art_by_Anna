@@ -1,25 +1,32 @@
 {% extends 'base.html' %}
 {% load static %}
+
+
+{% block extrahead %}
+<link rel="stylesheet" href="{% static 'css/products.css' %}">
+{% endblock %}
+
 {% block content %}
+<div class="row">
+	<div class="column left">
+		<a href="{% url 'shop:all_products' %}">All</a>
+		{% for category in category_list %}
+		<div>
+			<a href="{% url 'shop:products_by_category' category.slug %}">{{ category.name }}</a>
+		</div>
+		{% endfor %}
+	</div>
+	<div class="column right">
+		{% for product in product_list %}
+		<img src="{{ product.image.url }}">
+		<br/>
 
-<h1 class="my-4">Categories:</h1>
-<br/>
+		<a href="{% url 'shop:product_detail' product.slug %}">{{ product.name }}</a>
+		<h4>{{ product.price }} PLN</h4>
+		<p>{{ product.description }}</p>
 
-<a href="{% url 'shop:all_products' %}">All</a>
-{% for category in category_list %}
-<a href="{% url 'shop:products_by_category' category.slug %}">{{ category.name }}</a>
-{% endfor %}
-<br/>
-
-{% for product in product_list %}
-<img src="{{ product.image.url }}">
-<br/>
-
-<a href="{% url 'shop:product_detail' product.slug %}">{{ product.name }}</a>
-<h4>{{ product.price }} PLN</h4>
-<p>{{ product.description }}</p>
-
-{% endfor %}
-
+		{% endfor %}
+	</div>
+</div>
 {% endblock %}
 

@@ -12,6 +12,7 @@
 
 hr {
   max-width: 1530px;
+  margin-bottom: 30px;
 }
 
 .grid-container {
@@ -34,7 +35,6 @@ hr {
 .grid-container p {
   display: inline-block;
   max-width: 480px;
-
 }
 
 img {

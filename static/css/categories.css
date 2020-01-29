@@ -11,15 +11,19 @@
 }
 
 hr {
-  max-width: 1510px;
+  max-width: 1530px;
 }
 
 .grid-container {
   display: inline-grid;
   grid-template-columns: repeat(3, minmax(auto, 500px));
   grid-template-rows: auto;
-  grid-gap: 5px;
+  grid-gap: 15px;
   padding: 10px;
+}
+
+.grid-container > div {
+  background-color: #F5F5F5;
 }
 
 .grid-container a {
@@ -29,7 +33,8 @@ hr {
 
 .grid-container p {
   display: inline-block;
-  max-width: 500px;
+  max-width: 480px;
+
 }
 
 img {

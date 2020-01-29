@@ -4,7 +4,6 @@
     <list default="true" id="1a5a0013-ad36-4e0c-a037-dd867ba2b59a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/templates/shop/categories.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/templates/shop/categories.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/categories.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/categories.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

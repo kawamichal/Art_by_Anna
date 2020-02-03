@@ -13,6 +13,20 @@
   width: 75%;
 }
 
+/* Image */
+.column.container {
+  display: inline-grid;
+  grid-template-columns: repeat(3, minmax(auto, 300px));
+  grid-template-rows: auto;
+  grid-gap: 15px;
+}
+
+/* Image */
+img {
+    max-width:280px;
+    max-height:280px;
+}
+
 /* Clear floats after the columns */
 .row:after {
   content: "";

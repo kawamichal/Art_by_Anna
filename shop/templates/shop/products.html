@@ -17,15 +17,16 @@
 		{% endfor %}
 	</div>
 	<div class="column right">
-		{% for product in product_list %}
-		<img src="{{ product.image.url }}">
-		<br/>
-
-		<a href="{% url 'shop:product_detail' product.slug %}">{{ product.name }}</a>
-		<h4>{{ product.price }} PLN</h4>
-		<p>{{ product.description }}</p>
-
-		{% endfor %}
+		<div class="column container">
+			{% for product in product_list %}
+			<div>
+				<img src="{{ product.image.url }}">
+				<a href="{% url 'shop:product_detail' product.slug %}">{{ product.name }}</a>
+				<h4>{{ product.price }} PLN</h4>
+				<p>{{ product.description }}</p>
+			</div>
+			{% endfor %}
+		</div>
 	</div>
 </div>
 {% endblock %}

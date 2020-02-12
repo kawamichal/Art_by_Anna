@@ -7,27 +7,31 @@
 {% endblock %}
 
 {% block content %}
-<div class="row">
-	<div class="column left">
-		<a href="{% url 'shop:all_products' %}">All</a>
-		{% for category in category_list %}
-		<div>
-			<a href="{% url 'shop:products_by_category' category.slug %}">{{ category.name }}</a>
-		</div>
-		{% endfor %}
-	</div>
-	<div class="column right">
-		<div class="column container">
-			{% for product in product_list %}
-			<div>
-				<img src="{{ product.image.url }}">
-				<a href="{% url 'shop:product_detail' product.slug %}">{{ product.name }}</a>
-				<h4>{{ product.price }} PLN</h4>
-				<p>{{ product.description }}</p>
-			</div>
-			{% endfor %}
-		</div>
-	</div>
+<div class="content">
+    <div class="row">
+        <div class="column left">
+            <a href="{% url 'shop:all_products' %}">All</a>
+            {% for category in category_list %}
+            <div>
+                <a href="{% url 'shop:products_by_category' category.slug %}">{{ category.name }}</a>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="column right">
+            <div class="column-container">
+                {% for product in product_list %}
+                <div>
+                    <img src="{{ product.image.url }}">
+                    <p>
+                    <a href="{% url 'shop:product_detail' product.slug %}">{{ product.name }}</a>
+                    </p>
+                    <p>{{ product.price }} PLN</p>
+                    <p>{{ product.description }}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock %}
 

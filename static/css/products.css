@@ -1,3 +1,8 @@
+/* Style the content */
+.content {
+  padding: 10px;
+}
+
 /* Create three unequal columns that floats next to each other */
 .column {
   float: left;
@@ -14,21 +19,33 @@
 }
 
 /* Image */
-.column.container {
+.column-container {
   display: inline-grid;
   grid-template-columns: repeat(3, minmax(auto, 280px));
   grid-template-rows: auto;
   grid-gap: 15px;
 }
 
-.column.container > div {
-  background-color: #F5F5F5;
+.column-container > div {
+  background-color: white;
+}
+
+.column-container a {
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.column-container p {
+  margin-left: 5px;
 }
 
 /* Image */
 img {
     max-width:280px;
     max-height:280px;
+    padding: 10px;
 }
 
 /* Clear floats after the columns */

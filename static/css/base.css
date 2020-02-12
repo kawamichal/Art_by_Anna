@@ -18,7 +18,8 @@ header {
 body {
   margin: auto;
   font-family: Arial, Helvetica, sans-serif;
-  max-width: 1200px
+  max-width: 1200px;
+  background-color: #F5F5F5;
 }
 
 /* Style the top navigation bar */

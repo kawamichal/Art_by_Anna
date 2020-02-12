@@ -16,9 +16,13 @@
 /* Image */
 .column.container {
   display: inline-grid;
-  grid-template-columns: repeat(3, minmax(auto, 300px));
+  grid-template-columns: repeat(3, minmax(auto, 280px));
   grid-template-rows: auto;
   grid-gap: 15px;
+}
+
+.column.container > div {
+  background-color: #F5F5F5;
 }
 
 /* Image */

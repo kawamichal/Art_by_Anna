@@ -5,7 +5,6 @@ WORK IN PROGRESS.
 ## Stack
 - Python
 - Django
-- Celery, RabbitMQ
 
 ## I learned
 - e-store basic functionalities
@@ -16,6 +15,7 @@ WORK IN PROGRESS.
 - shopping cart creation and order management
 - context processors
 - using Cholocatey, Celery and RabbitMQ
+- basics of HTML, CSS
 
 ## Credits
 All of the art presented in the app belongs to my wife, Anna Ilnicka - Kawa. Do not copy/use without credit.

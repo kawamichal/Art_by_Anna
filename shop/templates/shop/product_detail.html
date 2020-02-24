@@ -6,18 +6,23 @@
 {% endblock %}
 
 {% block content %}
-<a href="{% url 'shop:all_products' %}">Go back</a>
-<br/>
-<br/>
+<div class="row">
+    <div class="column">
+        <img src="{{ product.image.url }}">
+    </div>
+    <div class="column">
+        <h3>{{ product.name }}</h3>
+        <h4>{{ product.price }} PLN</h4>
+        <p>{{ product.description }}</p>
+        <form action="{% url 'cart:cart_add' product.id %}" method="post">
+            {{ cart_product_form }}
+            {% csrf_token %}
+            <p>
+                <input type="submit" value="Add to cart">
+            </p>
+        </form>
+        <a href="{% url 'shop:all_products' %}">Go back</a>
 
-<img src="{{ product.image.url }}">
-<h3>{{ product.name }}</h3>
-<p>{{ product.description }}</p>
-<h4>{{ product.price }} PLN</h4>
-<form action="{% url 'cart:cart_add' product.id %}" method="post">
-    {{ cart_product_form }}
-    {% csrf_token %}
-    <input type="submit" value="Add to cart">
-</form>
-
+    </div>
+</div>
 {% endblock %}

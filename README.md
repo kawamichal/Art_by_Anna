@@ -5,6 +5,8 @@ WORK IN PROGRESS.
 ## Stack
 - Python
 - Django
+- HTML
+- CSS
 
 ## I learned
 - e-store basic functionalities

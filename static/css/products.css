@@ -20,7 +20,7 @@
 
 /* Image */
 .column-container {
-  display: inline-grid;
+  display: grid;
   grid-template-columns: repeat(3, minmax(auto, 280px));
   grid-template-rows: auto;
   grid-gap: 15px;
@@ -28,6 +28,10 @@
 
 .column-container > div {
   background-color: white;
+}
+
+.column-container > div:hover {
+  background-color: #F5F5F5;
 }
 
 .column-container a {
@@ -45,6 +49,7 @@
 img {
     max-width:280px;
     max-height:280px;
+    padding: 5px
 }
 
 /* Clear floats after the columns */

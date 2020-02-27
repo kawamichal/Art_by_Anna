@@ -31,7 +31,7 @@
 }
 
 .column-container > div:hover {
-  background-color: #F5F5F5;
+  background-color: #ddd;
 }
 
 .column-container a {
@@ -42,14 +42,14 @@
 }
 
 .column-container p {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 /* Image */
 img {
     max-width:280px;
     max-height:280px;
-    padding: 5px
+    padding: 10px;
 }
 
 /* Clear floats after the columns */

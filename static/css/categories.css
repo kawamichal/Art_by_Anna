@@ -17,7 +17,7 @@ hr {
 }
 
 .grid-container > div:hover {
-  background-color: #F5F5F5;
+  background-color: #ddd;
 }
 
 .grid-container a {

@@ -1,0 +1,35 @@
+table, td, th {
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 15px;
+}
+
+h2 {
+text-align: right;
+}
+
+/* Global style for buttons */
+.button2 {
+  background-color: #36495d;
+  color: white;
+  text-decoration: none;
+  font-size : 14px;
+  font-weight: bold;
+  padding: 4px 8px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.button2:hover {
+  opacity:1;
+}

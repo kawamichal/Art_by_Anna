@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1a5a0013-ad36-4e0c-a037-dd867ba2b59a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/templates/shop/categories.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/templates/shop/categories.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart/templates/cart/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/cart/templates/cart/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/base.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/categories.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/categories.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/products.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/products.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />

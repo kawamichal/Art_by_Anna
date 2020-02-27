@@ -7,22 +7,25 @@
 
 {% block content %}
 <div class="row">
-    <div class="column">
-        <img src="{{ product.image.url }}">
-    </div>
-    <div class="column">
-        <h3>{{ product.name }}</h3>
-        <h4>{{ product.price }} PLN</h4>
-        <p>{{ product.description }}</p>
-        <form action="{% url 'cart:cart_add' product.id %}" method="post">
-            {{ cart_product_form }}
-            {% csrf_token %}
-            <p>
-                <input type="submit" value="Add to cart">
-            </p>
-        </form>
-        <a href="{% url 'shop:all_products' %}">Go back</a>
+	<div class="column">
+		<img src="{{ product.image.url }}">
+	</div>
+	<div class="column">
+		<h3>{{ product.name }}</h3>
+		<h4>{{ product.price }} PLN</h4>
+		<p>{{ product.description }}</p>
+		<form action="{% url 'cart:cart_add' product.id %}" method="post">
+			<table border="0">
+				{{ cart_product_form }}
+			</table>
+			{% csrf_token %}
+			<p>
+				<input type="submit" class="button" value="Add to cart">
+				<a class="button" href="{% url 'shop:all_products' %}">Go back</a>
 
-    </div>
+			</p>
+		</form>
+
+	</div>
 </div>
 {% endblock %}

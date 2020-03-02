@@ -1,5 +1,5 @@
 # Art_by_Anna
-An e-store application that features shoping sessions, payments and order management.
+An e-store application that features shopping sessions, payments and order management.
 WORK IN PROGRESS.
 
 ## Stack

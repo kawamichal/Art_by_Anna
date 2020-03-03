@@ -2,6 +2,19 @@
 An e-store application that features shopping sessions, payments and order management.
 WORK IN PROGRESS.
 
+## How to run (using pipenv)
+- clone the repository
+- start a virtual environment ('pipenv shell')
+- pipenv install
+- python3 manage.py makemigrations
+- python3 manage.py migrate
+- python3 manage.py loaddata db.json
+- python3 manage.py runserver
+
+Credentials for testing purposes:
+username: testadmin<br/>
+password: admin1441<br/>
+
 ## Stack
 - Python
 - Django

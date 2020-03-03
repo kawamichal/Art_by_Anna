@@ -11,7 +11,7 @@ WORK IN PROGRESS.
 - python3 manage.py loaddata db.json
 - python3 manage.py runserver
 
-Credentials for testing purposes:
+Credentials for testing purposes:<br/>
 username: testadmin<br/>
 password: admin1441<br/>
 

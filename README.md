@@ -6,9 +6,9 @@ WORK IN PROGRESS.
 - clone the repository
 - start a virtual environment ('pipenv shell')
 - pipenv install
+- python3 manage.py loaddata db.json
 - python3 manage.py makemigrations
 - python3 manage.py migrate
-- python3 manage.py loaddata db.json
 - python3 manage.py runserver
 
 Credentials for testing purposes:<br/>

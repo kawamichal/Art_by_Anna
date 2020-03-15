@@ -13,7 +13,7 @@ WORK IN PROGRESS.
 
 Credentials for testing purposes:<br/>
 username: testadmin<br/>
-password: admin1441<br/>
+password: test1441<br/>
 
 ## Stack
 - Python

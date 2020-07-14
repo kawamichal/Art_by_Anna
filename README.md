@@ -1,4 +1,4 @@
-# Art_by_Anna
+# Art by Anna
 An e-store application that features shopping sessions, payments and order management. <br/>
 To see the live demo go to: https://artbyannailnickakawa.herokuapp.com/ <br/>
 WORK IN PROGRESS.

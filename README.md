@@ -5,12 +5,11 @@ WORK IN PROGRESS.
 
 ## How to run (using pipenv)
 - clone the repository
-- start a virtual environment ('pipenv shell')
-- pipenv install
-- python3 manage.py loaddata db.json
-- python3 manage.py makemigrations
-- python3 manage.py migrate
-- python3 manage.py runserver
+- start a virtual environment and install requirements
+- ./ manage.py loaddata db.json
+- ./ manage.py makemigrations
+- ./ manage.py migrate
+- ./ manage.py runserver
 
 Credentials for testing purposes:<br/>
 username: testadmin<br/>
@@ -30,7 +29,7 @@ password: test1441<br/>
 - django session types and settings (database storing session used for the project)
 - shopping cart creation and order management
 - context processors
-- using Cholocatey, Celery and RabbitMQ
+- using Celery and RabbitMQ
 - basics of HTML, CSS
 
 ## Credits

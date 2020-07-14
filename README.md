@@ -3,7 +3,7 @@ An e-store application that features shopping sessions, payments and order manag
 To see the live demo go to: https://artbyannailnickakawa.herokuapp.com/ <br/>
 WORK IN PROGRESS.
 
-## How to run (using pipenv)
+## How to run
 - clone the repository
 - start a virtual environment and install requirements
 - ./ manage.py loaddata db.json
